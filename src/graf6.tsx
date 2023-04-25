@@ -12,7 +12,7 @@ import {
   Tooltip,
 } from "react-jsx-highcharts";
 
-import data from "./data/graf5.json";
+import data from "./data/graf6.json";
 import colors from "./data/colors.json";
 import { Heading, Stack, Center } from "@chakra-ui/react";
 import { usePostMessageWithHeight } from "./hooks/usePostHeightMessage";
@@ -74,14 +74,10 @@ const BarChart = ({ data, title }: { data: number[][]; title: string }) => {
               enabled: true,
               rotation: 90,
               crop: false,
-              align:
-                title === "5. pětina – nejvyšší příjmy" ? "center" : "right",
-              inside: title === "5. pětina – nejvyšší příjmy" ? true : false,
-              y: title === "5. pětina – nejvyšší příjmy" ? 0 : -5,
-              style:
-                title === "5. pětina – nejvyšší příjmy"
-                  ? { color: "contrast" }
-                  : { color: "black", textOutline: "none" },
+              align: "right",
+              inside: false,
+              y: -5,
+              style: { color: "black", textOutline: "none" },
               formatter: function (this) {
                 if (this && this.point && this.point.y) {
                   const datalabel =
@@ -100,7 +96,7 @@ const BarChart = ({ data, title }: { data: number[][]; title: string }) => {
 };
 
 const Graf = () => {
-  const { containerRef, postHeightMessage } = usePostMessageWithHeight("graf5");
+  const { containerRef, postHeightMessage } = usePostMessageWithHeight("graf6");
 
   useEffect(() => {
     postHeightMessage();
@@ -109,10 +105,10 @@ const Graf = () => {
   return (
     <div ref={containerRef}>
       <Heading as="h1" size="lg">
-        Měsíční platba průměrného zaměstnance
+        Měsíční platba podle dětí a příjmu
       </Heading>
       <Heading as="h2" size="sm" mb={4}>
-        Zatížení daněmi a odvody ve skupinách podle výše příjmu
+        Zatížení daněmi a odvody v růných typech domácností
       </Heading>
       <HighchartsProvider Highcharts={Highcharts}>
         <Stack wrap={"wrap"} direction={"row"}>

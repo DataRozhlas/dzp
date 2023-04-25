@@ -59,9 +59,11 @@ const BarChart = ({
               return `Podle varianty <strong>${title}</strong> by se výběr daně z příjmů od <strong>${kvintil.slice(
                 0,
                 1
-              )}. pětiny zaměstnanců</strong> rozdělených podle výše příjmů zvýšil o <strong>${
-                this.point.y
-              } mld. Kč</strong>.`;
+              )}. pětiny zaměstnanců</strong> rozdělených podle výše příjmů ${
+                this.point.y > 0 ? "zvýšil" : "snížil"
+              } o <strong>${Math.abs(this.point.y).toLocaleString(
+                "cs-CZ"
+              )} mld. Kč</strong>.`;
             }
             return undefined;
           }}
