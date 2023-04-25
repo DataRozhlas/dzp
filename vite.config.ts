@@ -10,6 +10,7 @@ export default defineConfig({
       input: [
         "index.html",
         "graf1.html",
+        "graf3.html",
         "graf2.html",
         "graf4.html",
         "graf5.html",
