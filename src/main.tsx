@@ -19,12 +19,13 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         </li>
         <li>
           <Link href="graf3.html" textDecoration={"underline"} target="_blank">
-            Graf 3: Efektivní sazba daní a odvodů (daňová progrese)
+            Graf 3: Efektivní sazba daní a odvodů: podle výše hrubé mzdy
           </Link>
         </li>
         <li>
           <Link href="graf4.html" textDecoration={"underline"} target="_blank">
-            Graf 4: Celkové náklady práce
+            Graf 4: Efektivní sazba daní a odvodů: podle dětí a příjmu
+            domácnosti
           </Link>
         </li>
         <li>

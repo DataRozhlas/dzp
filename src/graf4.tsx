@@ -100,11 +100,10 @@ const Graf = () => {
   return (
     <div ref={containerRef}>
       <Heading as="h1" size="lg">
-        Celkové náklady práce
+        Efektivní sazba daní a odvodů: podle dětí a příjmu domácnosti
       </Heading>
       <Heading as="h2" size="sm" mb={4}>
-        Kolik procent nákladů by odvedli zaměstnanci a zaměstnavatelé, rozděleno
-        podle typu domácnosti
+        Kolik procent z nákladů práce odvedou státu zaměstnanec a zaměstnavatel
       </Heading>
       <HighchartsProvider Highcharts={Highcharts}>
         <Stack wrap={"wrap"} direction={"row"}>

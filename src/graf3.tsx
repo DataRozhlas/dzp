@@ -34,11 +34,10 @@ const Graf = () => {
   return (
     <div ref={containerRef}>
       <Heading as="h1" size="lg">
-        Efektivní sazba daní a odvodů (daňová progrese)
+        Efektivní sazba daní a odvodů: podle výše hrubé mzdy
       </Heading>
       <Heading as="h2" size="sm" mb={4}>
-        Kolik procent z hrubé mzdy by zaplatili zaměstnavatelé a zaměstnanci
-        rozdělení do pěti stejně velkých skupin podle výše příjmu
+        Kolik procent z nákladů práce odvedou státu zaměstnanec a zaměstnavatel
       </Heading>
 
       <HighchartsProvider Highcharts={Highcharts}>
