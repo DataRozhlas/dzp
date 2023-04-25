@@ -6,8 +6,6 @@ import {
   HighchartsProvider,
   HighchartsChart,
   Chart,
-  Legend,
-  Tooltip,
   XAxis,
   YAxis,
   BarSeries,
@@ -24,7 +22,7 @@ Highcharts.setOptions({
   },
 });
 
-const Graf1 = () => {
+const Graf = () => {
   const { containerRef, postHeightMessage } = usePostMessageWithHeight("graf1");
 
   useEffect(() => {
@@ -42,6 +40,7 @@ const Graf1 = () => {
             series: {
               stacking: "normal",
               animation: false,
+              states: { hover: { enabled: false } }, // disable hover
             },
           }}
         >
@@ -59,7 +58,6 @@ const Graf1 = () => {
                   color: colors[index],
                 };
               })}
-              showInLegend={false}
               dataLabels={{
                 enabled: true,
                 formatter: function (this) {
@@ -84,10 +82,12 @@ const Graf1 = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById("graf1") as HTMLElement).render(
+ReactDOM.createRoot(
+  document.getElementById("chartcontainer") as HTMLElement
+).render(
   <React.StrictMode>
     <ChakraProvider>
-      <Graf1 />
+      <Graf />
     </ChakraProvider>
   </React.StrictMode>
 );
