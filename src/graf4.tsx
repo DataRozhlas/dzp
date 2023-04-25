@@ -37,7 +37,13 @@ const BarChart = ({ data, title }: { data: number[]; title: string }) => {
           },
         }}
       >
-        <Chart type="column" animation={false} width={310} height={310} />
+        <Chart
+          type="column"
+          animation={false}
+          width={310}
+          height={310}
+          style={{ fontFamily: "var(--chakra-fonts-heading)" }}
+        />
         <Tooltip
           formatter={function (this) {
             if (this && this.point && this.point.y) {

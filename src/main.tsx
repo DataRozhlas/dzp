@@ -22,6 +22,11 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             Graf 4: Celkové náklady práce
           </Link>
         </li>
+        <li>
+          <Link href="graf5.html" textDecoration={"underline"} target="_blank">
+            Graf 5: Měsíční platba průměrného zaměstnance
+          </Link>
+        </li>
       </ul>
     </ChakraProvider>
   </React.StrictMode>

@@ -44,7 +44,11 @@ const Graf = () => {
             },
           }}
         >
-          <Chart type="column" animation={false} />
+          <Chart
+            type="column"
+            animation={false}
+            style={{ fontFamily: "var(--chakra-fonts-heading)" }}
+          />
           <XAxis
             type="category"
             categories={data.map((item) => item[0] as string)}

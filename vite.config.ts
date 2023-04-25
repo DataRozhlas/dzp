@@ -7,7 +7,13 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: ["index.html", "graf1.html", "graf2.html", "graf4.html"],
+      input: [
+        "index.html",
+        "graf1.html",
+        "graf2.html",
+        "graf4.html",
+        "graf5.html",
+      ],
     },
   },
 });

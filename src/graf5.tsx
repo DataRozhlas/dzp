@@ -12,7 +12,7 @@ import {
   Tooltip,
 } from "react-jsx-highcharts";
 
-import data from "./data/graf2.json";
+import data from "./data/graf5.json";
 import colors from "./data/colors.json";
 import { Heading, Stack, Center } from "@chakra-ui/react";
 import { usePostMessageWithHeight } from "./hooks/usePostHeightMessage";
@@ -23,15 +23,7 @@ Highcharts.setOptions({
   },
 });
 
-const BarChart = ({
-  data,
-  color,
-  title,
-}: {
-  data: number[];
-  color: string;
-  title: string;
-}) => {
+const BarChart = ({ data, title }: { data: number[][]; title: string }) => {
   return (
     <Stack mb={4}>
       <Center>
@@ -41,6 +33,7 @@ const BarChart = ({
         plotOptions={{
           series: {
             animation: false,
+            stacking: "normal",
             states: { hover: { enabled: false } }, // disable hover
           },
         }}
@@ -55,13 +48,8 @@ const BarChart = ({
         <Tooltip
           formatter={function (this) {
             if (this && this.point && this.point.y) {
-              const kvintil = this.point.category as string;
-              return `Podle varianty <strong>${title}</strong> by se výběr daně z příjmů od <strong>${kvintil.slice(
-                0,
-                1
-              )}. pětiny zaměstnanců</strong> rozdělených podle výše příjmů zvýšil o <strong>${
-                this.point.y
-              } mld. Kč</strong>.`;
+              const datalabel = this.point.y.toLocaleString("cs-CZ") + " Kč";
+              return `${this.series.name}: <strong>${datalabel}</strong>`;
             }
             return undefined;
           }}
@@ -69,35 +57,42 @@ const BarChart = ({
         <XAxis
           type="category"
           categories={[
-            "1. pětina<br>nejnižší příjmy",
-            "2. pětina",
-            "3. pětina",
-            "4. pětina",
-            "5. pětinn<br>nejvyšší příjmy",
+            "Současnost",
+            "Návrat do 2020",
+            "STAN",
+            "IDEA+PAQ Vyvážená",
+            "IDEA+PAQ Realistická",
           ]}
         />
-        <YAxis min={-5} max={45}>
+        <YAxis max={100000}>
           <ColumnSeries
-            name={"Zvýšení výběru daní od zaměstnanců"}
-            data={data}
-            color={color}
+            name={"daně a odvody"}
+            data={data[1].map((value, index) => {
+              return { y: value, color: colors[index] };
+            })}
             dataLabels={{
               enabled: true,
+              rotation: 90,
+              crop: false,
+              align:
+                title === "5. pětina – nejvyšší příjmy" ? "center" : "right",
+              inside: title === "5. pětina – nejvyšší příjmy" ? true : false,
+              y: title === "5. pětina – nejvyšší příjmy" ? 0 : -10,
+              style:
+                title === "5. pětina – nejvyšší příjmy"
+                  ? { color: "contrast" }
+                  : { color: "black", textOutline: "none" },
               formatter: function (this) {
                 if (this && this.point && this.point.y) {
-                  return this.point.y > 0
-                    ? "+" +
-                        (Math.floor(this.point.y * 10) / 10).toLocaleString(
-                          "cs-CZ"
-                        )
-                    : (Math.floor(this.point.y * 10) / 10).toLocaleString(
-                        "cs-CZ"
-                      );
+                  const datalabel =
+                    Math.floor(this.point.y).toLocaleString("cs-CZ") + " Kč";
+                  return datalabel;
                 }
                 return undefined;
               },
             }}
           />
+          <ColumnSeries name={"čistá mzda"} data={data[0]} color={"#E7DFC8"} />
         </YAxis>
       </HighchartsChart>
     </Stack>
@@ -105,7 +100,7 @@ const BarChart = ({
 };
 
 const Graf = () => {
-  const { containerRef, postHeightMessage } = usePostMessageWithHeight("graf2");
+  const { containerRef, postHeightMessage } = usePostMessageWithHeight("graf5");
 
   useEffect(() => {
     postHeightMessage();
@@ -114,23 +109,20 @@ const Graf = () => {
   return (
     <div ref={containerRef}>
       <Heading as="h1" size="lg">
-        O kolik miliard víc by stát vybral
+        Měsíční platba průměrného zaměstnance
       </Heading>
       <Heading as="h2" size="sm" mb={4}>
-        Od stejně početných skupin zaměstnanců seřazených od nízkopříjmových (1.
-        pětina) po vysokopříjmové (5. pětina)
+        Zatížení nákladů práce daněmi a odvody ve skupinách podle výše příjmu
       </Heading>
       <HighchartsProvider Highcharts={Highcharts}>
         <Stack wrap={"wrap"} direction={"row"}>
           {data.map((item, index) => {
-            const numbers: number[] = item.slice(1, 6) as number[];
+            const numbers: number[][] = [
+              item[1].slice(1, 6) as number[],
+              item[2].slice(1, 6) as number[],
+            ];
             return (
-              <BarChart
-                key={item[0]}
-                data={numbers}
-                color={colors[index + 1]}
-                title={item[0] as string}
-              />
+              <BarChart key={index} data={numbers} title={item[0] as string} />
             );
           })}
         </Stack>
