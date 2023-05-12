@@ -25,7 +25,8 @@ Highcharts.setOptions({
 });
 
 const Graf = () => {
-  const { containerRef, postHeightMessage } = usePostMessageWithHeight("graf3");
+  const { containerRef, postHeightMessage } =
+    usePostMessageWithHeight("graf10");
 
   useEffect(() => {
     postHeightMessage();
