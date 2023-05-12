@@ -48,7 +48,7 @@ const BarChart = ({
         <Chart
           type="column"
           animation={false}
-          width={310}
+          width={300}
           height={310}
           style={{ fontFamily: "var(--chakra-fonts-heading)" }}
         />
@@ -75,7 +75,7 @@ const BarChart = ({
             "2. pětina",
             "3. pětina",
             "4. pětina",
-            "5. pětinn<br>nejvyšší příjmy",
+            "5. pětina<br>nejvyšší příjmy",
           ]}
         />
         <YAxis min={-5} max={45}>
@@ -120,7 +120,7 @@ const Graf = () => {
       </Heading>
       <Heading as="h2" size="sm" mb={4}>
         Od stejně početných skupin zaměstnanců seřazených od nízkopříjmových (1.
-        pětina) po vysokopříjmové (5. pětina)
+        {"\u00A0"}pětina) po vysokopříjmové (5.{"\u00A0"}pětina)
       </Heading>
       <HighchartsProvider Highcharts={Highcharts}>
         <Stack wrap={"wrap"} direction={"row"}>

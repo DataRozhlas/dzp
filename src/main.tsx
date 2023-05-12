@@ -38,6 +38,29 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             Graf 6: Měsíční platba podle dětí a příjmu
           </Link>
         </li>
+        <li>
+          <Link href="graf7.html" textDecoration={"underline"} target="_blank">
+            Graf 7: Efektivní daňová kvóta (pětina zaměstnanců dle hrubé mzdy)
+          </Link>
+        </li>
+        <li>
+          <Link href="graf8.html" textDecoration={"underline"} target="_blank">
+            Graf 8: Efektivní daňová kvóta (zaměstnanci podle příjmu domácnosti
+            a dětí)
+          </Link>
+        </li>
+        <li>
+          <Link href="graf9.html" textDecoration={"underline"} target="_blank">
+            Graf 9: Navýšení výběru daní a odvodů (pětiny zaměstnanců podle
+            příjmu)
+          </Link>
+        </li>
+        <li>
+          <Link href="graf10.html" textDecoration={"underline"} target="_blank">
+            Graf 10: Navýšení výběru daní a odvodů (zaměstnanci podle příjmu
+            domácnosti a dětí)
+          </Link>
+        </li>
       </ul>
     </ChakraProvider>
   </React.StrictMode>

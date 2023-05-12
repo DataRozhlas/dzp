@@ -8,13 +8,13 @@ import {
   Chart,
   XAxis,
   YAxis,
-  LineSeries,
+  ColumnSeries,
   Tooltip,
   Legend,
 } from "react-jsx-highcharts";
 
-import data from "./data/graf3.json";
-import colors from "./data/colors.json";
+import data from "./data/graf9.json";
+import colors from "./data/twocolors.json";
 import { Heading } from "@chakra-ui/react";
 import { usePostMessageWithHeight } from "./hooks/usePostHeightMessage";
 
@@ -34,10 +34,10 @@ const Graf = () => {
   return (
     <div ref={containerRef}>
       <Heading as="h1" size="lg">
-        Efektivní sazba daní a odvodů: podle výše hrubé mzdy
+        Navýšení výběru daní a odvodů
       </Heading>
       <Heading as="h2" size="sm" mb={4}>
-        Kolik procent z nákladů práce odvedou státu zaměstnanec a zaměstnavatel
+        Od zaměstnanců rozdělených na pětiny podle výše hrubé mzdy
       </Heading>
 
       <HighchartsProvider Highcharts={Highcharts}>
@@ -48,13 +48,13 @@ const Graf = () => {
               dataLabels: {
                 enabled: true,
                 formatter: function (this) {
-                  if (
-                    this.point.index === 0 ||
-                    this.point.index === this.series.points.length - 1
-                  ) {
-                    return this.point.y + " %";
+                  if (this.point.y) {
+                    return `+ ${(this.point.y / 1000000000).toLocaleString(
+                      "cs-CZ"
+                    )}
+                       mld.`;
                   }
-                  return undefined;
+                  return;
                 },
               },
             },
@@ -65,7 +65,7 @@ const Graf = () => {
             animation={false}
             style={{ fontFamily: "var(--chakra-fonts-heading)" }}
           />
-          <Tooltip valueSuffix=" %" />
+          <Tooltip valueSuffix=" Kč" />
           <Legend />
           <XAxis
             type="category"
@@ -78,16 +78,11 @@ const Graf = () => {
             ]}
           />
           <YAxis>
-            {data.map((serie, i) => {
-              return (
-                <LineSeries
-                  key={serie[0]}
-                  data={serie.slice(1, 6)}
-                  color={colors[i]}
-                  name={serie[0] as string}
-                />
-              );
-            })}
+            <ColumnSeries
+              data={data}
+              color={colors[1]}
+              name="Celkové odvody za zaměstnance i zaměstnavatele"
+            />
           </YAxis>
         </HighchartsChart>
       </HighchartsProvider>

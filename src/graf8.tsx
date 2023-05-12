@@ -13,8 +13,8 @@ import {
   Legend,
 } from "react-jsx-highcharts";
 
-import data from "./data/graf3.json";
-import colors from "./data/colors.json";
+import data from "./data/graf8.json";
+import colors from "./data/twocolors.json";
 import { Heading } from "@chakra-ui/react";
 import { usePostMessageWithHeight } from "./hooks/usePostHeightMessage";
 
@@ -34,10 +34,10 @@ const Graf = () => {
   return (
     <div ref={containerRef}>
       <Heading as="h1" size="lg">
-        Efektivní sazba daní a odvodů: podle výše hrubé mzdy
+        Efektivní daňová kvóta
       </Heading>
       <Heading as="h2" size="sm" mb={4}>
-        Kolik procent z nákladů práce odvedou státu zaměstnanec a zaměstnavatel
+        Zaměstnanci rozdělení podle výše příjmu domácnosti a toho, zda mají děti
       </Heading>
 
       <HighchartsProvider Highcharts={Highcharts}>
@@ -65,16 +65,15 @@ const Graf = () => {
             animation={false}
             style={{ fontFamily: "var(--chakra-fonts-heading)" }}
           />
-          <Tooltip valueSuffix=" %" />
+          <Tooltip valueSuffix=" %" shared={true} />
           <Legend />
           <XAxis
             type="category"
             categories={[
-              "1. pětina<br>nejnižší příjmy",
-              "2. pětina",
-              "3. pětina",
-              "4. pětina",
-              "5. pětina<br>nejvyšší příjmy",
+              "Domácnosti s dětmi, příjmy pod medián",
+              "Domácnosti s dětmi, příjmy nad medián",
+              "Domácnosti bez dětí, příjmy pod medián",
+              "Domácnosti bez dětí, nad medián",
             ]}
           />
           <YAxis>
