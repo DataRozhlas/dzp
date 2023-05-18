@@ -61,6 +61,11 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             domácnosti a dětí)
           </Link>
         </li>
+        <li>
+          <Link href="graf11.html" textDecoration={"underline"} target="_blank">
+            Graf 11: Přehled dotací
+          </Link>
+        </li>
       </ul>
     </ChakraProvider>
   </React.StrictMode>

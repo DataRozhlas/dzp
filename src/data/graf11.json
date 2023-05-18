@@ -1,0 +1,1560 @@
+[
+  {
+    "id": "Ministerstvo školství, mládeže a tělovýchovy",
+    "name": "Ministerstvo školství, mládeže a tělovýchovy",
+    "color": 0
+  },
+  { "id": "Ministerstvo dopravy", "name": "Ministerstvo dopravy", "color": 1 },
+  {
+    "id": "Ministerstvo práce a sociálních věcí",
+    "name": "Ministerstvo práce a sociálních věcí",
+    "color": 2
+  },
+  {
+    "id": "Ministerstvo průmyslu a obchodu",
+    "name": "Ministerstvo průmyslu a obchodu",
+    "color": 3
+  },
+  {
+    "id": "Všeobecná pokladní správa",
+    "name": "Všeobecná pokladní správa",
+    "color": 4
+  },
+  {
+    "id": "Ministerstvo zemědělství",
+    "name": "Ministerstvo zemědělství",
+    "color": 5
+  },
+  { "id": "Akademie věd ČR", "name": "Akademie věd ČR", "color": 6 },
+  { "id": "Ministerstvo kultury", "name": "Ministerstvo kultury", "color": 7 },
+  {
+    "id": "Národní sportovní agentura",
+    "name": "Národní sportovní agentura",
+    "color": 8
+  },
+  {
+    "id": "Státní fond dopravní infrastruktury",
+    "name": "Státní fond dopravní infrastruktury",
+    "color": 9
+  },
+  {
+    "id": "Technologcká agentura ČR",
+    "name": "Technologcká agentura ČR",
+    "color": 10
+  },
+  { "id": "Grantová agentura ČR", "name": "Grantová agentura ČR", "color": -1 },
+  {
+    "id": "Ministerstvo životního prostředí",
+    "name": "Ministerstvo životního prostředí",
+    "color": 0
+  },
+  {
+    "id": "Ministerstvo zdravotnictví",
+    "name": "Ministerstvo zdravotnictví",
+    "color": 1
+  },
+  {
+    "id": "Ministerstvo pro místní rozvoj",
+    "name": "Ministerstvo pro místní rozvoj",
+    "color": 2
+  },
+  { "id": "Ministerstvo vnitra", "name": "Ministerstvo vnitra", "color": 3 },
+  {
+    "id": "Ministerstvo zahraničních věcí",
+    "name": "Ministerstvo zahraničních věcí",
+    "color": 4
+  },
+  { "id": "Úřad vlády ČR", "name": "Úřad vlády ČR", "color": 5 },
+  {
+    "id": "Státní úřad pro jadernou bezpečnost",
+    "name": "Státní úřad pro jadernou bezpečnost",
+    "color": 6
+  },
+  { "id": "Ministerstvo obrany", "name": "Ministerstvo obrany", "color": 7 },
+  {
+    "id": "Ministerstvo spravedlnosti",
+    "name": "Ministerstvo spravedlnosti",
+    "color": 8
+  },
+  { "id": "Ministerstvo financí", "name": "Ministerstvo financí", "color": 9 },
+  {
+    "name": "Podpora implementace Evropské charty regionálních či menšinových jazyků",
+    "parent": "Úřad vlády ČR",
+    "value": 3000000
+  },
+  {
+    "name": "Podpora koordinátorů pro romské záležitosti",
+    "parent": "Úřad vlády ČR",
+    "value": 5850000
+  },
+  {
+    "name": "Podpora celostátních mezioborových síti nestátních neziskových organizací",
+    "parent": "Úřad vlády ČR",
+    "value": 3000000
+  },
+  {
+    "name": "Prevence sociálního vyloučení a komunitní práce",
+    "parent": "Úřad vlády ČR",
+    "value": 12750000
+  },
+  {
+    "name": "Podpora terénní práce",
+    "parent": "Úřad vlády ČR",
+    "value": 11900000
+  },
+  {
+    "name": "Podpora veřejně prospěšných aktivit spolků osob se zdravotním postižením",
+    "parent": "Úřad vlády ČR",
+    "value": 22500000
+  },
+  {
+    "name": "Program protidrogové politiky",
+    "parent": "Úřad vlády ČR",
+    "value": 310000000
+  },
+  {
+    "name": "Podpora veřejně prospěšných aktivit oblasti rovnosti žen mužů",
+    "parent": "Úřad vlády ČR",
+    "value": 2000000
+  },
+  {
+    "name": "Humanitární dotace agregace",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 75000000
+  },
+  {
+    "name": "Humanitární pomoc - program BVA",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 60000000
+  },
+  {
+    "name": "Spolupráce krajanskými komunitami v zahraničí agregace",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 3000000
+  },
+  {
+    "name": "Spolupráce krajanskými komtmitami OVD",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 1500000
+  },
+  {
+    "name": "Transformační Spolupráce agregace",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 61000000
+  },
+  {
+    "name": "Podpora strategických partnerů",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 7000000
+  },
+  {
+    "name": "Zpracováni kulturního dědictví aktuálních témat Německem",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 1000000
+  },
+  {
+    "name": "Priority zahraniční politiky ČR a mezinárodní vztahy agregace",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 2763089
+  },
+  {
+    "name": "Česko-polské fórum",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 585
+  },
+  {
+    "name": "Zahraniční rozvojová spolupráce agregace",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 27674200
+  },
+  {
+    "name": "Veřejné VŠ v ZRS zemích",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 9000000
+  },
+  {
+    "name": "GRV osvěta veřejnosti",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 8000000
+  },
+  {
+    "name": "Posilováni kapacit realizátorů ZRS",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 5000000
+  },
+  {
+    "name": "Podpora trilaterální spolupráce",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 25000000
+  },
+  {
+    "name": "Rozvojové-ekonomické partnerství",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 9500000
+  },
+  {
+    "name": "Realizace bilaterální ZRS",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 154068132
+  },
+  {
+    "name": "Dlouhodobý koncepční rovoj výzkumných organizací agregace",
+    "parent": "Ministerstvo zahraničních věcí",
+    "value": 34632400
+  },
+  {
+    "name": "EDS/SMVS č. 10729 „Zachování a obnova historických hodnot I“",
+    "parent": "Ministerstvo obrany",
+    "value": 17000000
+  },
+  {
+    "name": "EDS/SMVS č. 10799 „Dotace nestátním neziskovým organizacím“",
+    "parent": "Ministerstvo obrany",
+    "value": 37900000
+  },
+  {
+    "name": "Dotxe na správu a činnost Rady pro veřejný dohled nad auditem",
+    "parent": "Ministerstvo financí",
+    "value": 27500000
+  },
+  {
+    "name": "Transfery podle zákona č. 108/2006 Sb., o sociálních službách",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 26487733456
+  },
+  {
+    "name": "Transfery nestátním subjektům poskytujícím služby v oblasti rodiny",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 180000000
+  },
+  {
+    "name": "Transfery územním rozpočtům na sociálně právní ochranu dětí (ZDVOP)",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 230000000
+  },
+  {
+    "name": "Transfery spolufinancované z prostředků EU a FM (národní podíl)",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 871288670
+  },
+  {
+    "name": "Transfery na činnosti vykonávané obcemi s rozšířenou působností v oblasti sociálně-právni ochrany děti (SPOD)",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 1655000000
+  },
+  {
+    "name": "Státní příspěvek na výkon pěstounské péče",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 760744445
+  },
+  {
+    "name": "Transfery na příspěvek na výkon sociální práce na krajských a obecních úřadech",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 487500000
+  },
+  {
+    "name": "Dotační řízení na podporu VŮA seniorských organizací",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 18000000
+  },
+  {
+    "name": "Dotační program pro oblast podpory přípravy na stárnutí na místní úrovni - obec přátelský seniorům (NAP)",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 6000000
+  },
+  {
+    "name": "Dotační titul „Asistenční pes“",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 0
+  },
+  {
+    "name": "Státní příspěvek na provoz dětských skupin",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 2081000000
+  },
+  {
+    "name": "Program 013D310 Rozvoj a obnova MTZ sociálních služeb (investiční dotace)",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 70000000
+  },
+  {
+    "name": "Investiční transfery NPO (především zajištění finančního krytí DPH na realizaci stavebních projektů komponenty 3.3)",
+    "parent": "Ministerstvo práce a sociálních věcí",
+    "value": 207750000
+  },
+  {
+    "name": "Veřejně prospěšný program v oblasti tělesné a střelecké přípravy příslušníků Policie ČR a jejich dalších sportovních aktivit včetně rekreačně pohybových aktivit zaměstnanců MV, Policie ČR Veteránů Policie ČR",
+    "parent": "Ministerstvo vnitra",
+    "value": 7000000
+  },
+  {
+    "name": "Program IMPAKT 1 — Strategická podpora rozvoje bezpečnostního výzkumu ČR (2019-2025) - VJ",
+    "parent": "Ministerstvo vnitra",
+    "value": 200000000
+  },
+  {
+    "name": "Program bezpečnostního výzkumu ČR: vývoj, testování a evaluace nových bezpečnostních technologií SECTECH (2021-2026) - VB",
+    "parent": "Ministerstvo vnitra",
+    "value": 100000000
+  },
+  {
+    "name": "Program bezpečnostního výzkumu pro potřeby státu SecPro (2022-2027) - VC",
+    "parent": "Ministerstvo vnitra",
+    "value": 110000000
+  },
+  {
+    "name": "Otevřené výzvy bezpečnostním výzkumu 2023-2029 (OPSEC) - VK",
+    "parent": "Ministerstvo vnitra",
+    "value": 288000000
+  },
+  {
+    "name": "Nový program — Program IMPAKT 2 — Strategická podpora rozvoje bezpečnostního vyzkumu ČR (2026-2031)",
+    "parent": "Ministerstvo vnitra",
+    "value": 0
+  },
+  {
+    "name": "Příspěvky nestátním soukromým akreditovaným archivům na provoz podle zákona č. 499/2004 Sb., ve znění pozdějších předpisů",
+    "parent": "Ministerstvo vnitra",
+    "value": 300
+  },
+  {
+    "name": "Program prevence kriminiality na místní úrovni",
+    "parent": "Ministerstvo vnitra",
+    "value": 32806000
+  },
+  {
+    "name": "Rozvoj dobrovolnické služby",
+    "parent": "Ministerstvo vnitra",
+    "value": 14100000
+  },
+  {
+    "name": "Dotační program pro nestátní neziskové organizace provozující evropské krizové či asistenční linky 116 000, 116 111 v ČR",
+    "parent": "Ministerstvo vnitra",
+    "value": 1880000
+  },
+  {
+    "name": "Program prevence sociálně patologických jevů",
+    "parent": "Ministerstvo vnitra",
+    "value": 1880000
+  },
+  {
+    "name": "Účelová neinvestiční dotace na výdaje jednotek sborů dobrovolných hasičů obcí poskytovaná obcím prostřednictvím krajů a hl. m. Prahy",
+    "parent": "Ministerstvo vnitra",
+    "value": 100000000
+  },
+  {
+    "name": "Podpora spolkové činnosti spolků působících na úseku požární ochrany, jejichž členové vyvíjí činnost i v jednotkách SDH obcí",
+    "parent": "Ministerstvo vnitra",
+    "value": 20000000
+  },
+  {
+    "name": "Podpora nestátních neziskových organizací působících na úseku požární ochrany, integrovaného záchranného systému, ochrany obyvatelstva a krizového řízení",
+    "parent": "Ministerstvo vnitra",
+    "value": 18000000
+  },
+  {
+    "name": "Neinvestiční dotace obcím podle § 151 odst. 1) zákona č. 326/1999 Sb., o pobytu cizinců na území ČR",
+    "parent": "Ministerstvo vnitra",
+    "value": 1000000
+  },
+  {
+    "name": "Neinvestiční dotace obcím podle § 84 odst. 1) zákona č. 325/1999 Sb., o azylu",
+    "parent": "Ministerstvo vnitra",
+    "value": 1000000
+  },
+  {
+    "name": "Státni integrační program — dotace na úhradu pobytu v zařízení sociálních služeb a na rozvoj infrstruktury obce",
+    "parent": "Ministerstvo vnitra",
+    "value": 1800000
+  },
+  {
+    "name": "Dotace na předfinancování adaptačně-integračních kurzů nařízených zákonem o pobytu cizinců - § 155b",
+    "parent": "Ministerstvo vnitra",
+    "value": 22730853
+  },
+  {
+    "name": "Koncepce integrace cizinců (ÚV ze 14. prosince 2022 č. 1051)",
+    "parent": "Ministerstvo vnitra",
+    "value": 40769147
+  },
+  {
+    "name": "Program prevence kriminality na místní úrovni",
+    "parent": "Ministerstvo vnitra",
+    "value": 18800000
+  },
+  {
+    "name": "Investiční účelové dotace pro jednotky SDH obcí",
+    "parent": "Ministerstvo vnitra",
+    "value": 710000000
+  },
+  {
+    "name": "Program péče o krajinu (PPK)",
+    "parent": "Ministerstvo životního prostředí",
+    "value": 200000000
+  },
+  {
+    "name": "Dotace pro nestátní neziskové organizace",
+    "parent": "Ministerstvo životního prostředí",
+    "value": 20000000
+  },
+  {
+    "name": "Příspěvek ZOO",
+    "parent": "Ministerstvo životního prostředí",
+    "value": 20000000
+  },
+  {
+    "name": "Program obnovy přirozených funkcí krajiny - od 2019",
+    "parent": "Ministerstvo životního prostředí",
+    "value": 25000000
+  },
+  {
+    "name": "Nová zelená úsporám (program EDS 115 280)",
+    "parent": "Ministerstvo životního prostředí",
+    "value": 3650000000
+  },
+  {
+    "name": "11716 Podpora bydlení - Solnice - Kvasiny",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "11722 Podpra architektonických a urbanistických soutěží",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "11723 Podpora bydlení - nový",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "11755 Podpora územně plánovacích činností obcí",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 45000000
+  },
+  {
+    "name": "11762 Bezbariérové obce",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 15000000
+  },
+  {
+    "name": "11772 Národní program podpory cestovního ruchu v regionech",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 140000000
+  },
+  {
+    "name": "11782 Podpora rozvoje regionů 2019+",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 1000000000
+  },
+  {
+    "name": "nový 11782 Podpora rozvoje regionů 2024+",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "nový Podpora rozvoje Hospodářsky a sociálně ohrožených regionů",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "nový Podpora revitalizace území 2024+",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "11792 Obnova obecního krajského majetku po živelních pohromách 2021",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 100000000
+  },
+  {
+    "name": "11795 Dostupné bydleni (SFPI)",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 800000000
+  },
+  {
+    "name": "11796 Infrastruktury cestovním ruchu",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "nový Podpora regenerace brownfieldů II (SFPI)",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "Z1706 NNO v oblasti regionálního rozvoje",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "Z1706 NNO v oblasti cestovního ruchu",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "Z1706 NNO v oblasti bydlení",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "Z1706 v oblasti bezbariérového užívání staveb",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "Z1712 Podpora destinačního managementu a marketingu v cestovním ruchu 2023+",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "Nový Neinvestiční dotace NRB - obnova místních komunikací - úvěry",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "Z1704 Horská služba - neinvestiční dotace",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 226000000
+  },
+  {
+    "name": "11713 Horská služba - investiční dotace - MTZ HS ČR",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 234000000
+  },
+  {
+    "name": "11725 Horská služba - investiční dotace - MTZ HS ČR od roku 2022",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 0
+  },
+  {
+    "name": "Z1705 Státní fond podpory investic - neinvestiční dotace",
+    "parent": "Ministerstvo pro místní rozvoj",
+    "value": 109000000
+  },
+  {
+    "name": "Standardní projekty",
+    "parent": "Grantová agentura ČR",
+    "value": 2988360000
+  },
+  {
+    "name": "Mezinárodní projekty",
+    "parent": "Grantová agentura ČR",
+    "value": 63571000
+  },
+  {
+    "name": "Grantové projekty excelence v základním výzkumu EXPRO",
+    "parent": "Grantová agentura ČR",
+    "value": 625361000
+  },
+  {
+    "name": "LA granty - mezinárodní granty",
+    "parent": "Grantová agentura ČR",
+    "value": 378636386
+  },
+  {
+    "name": "Grantové projekty JUNIOR STAR",
+    "parent": "Grantová agentura ČR",
+    "value": 375000000
+  },
+  {
+    "name": "POSTDOC NDIVUDAL FELLOWSHIP",
+    "parent": "Grantová agentura ČR",
+    "value": 100000000
+  },
+  {
+    "name": "Výzkum. vývoj a inovace (účelová a institucionální podpora, vč. Administrace) investiční/neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 1288946334
+  },
+  {
+    "name": "Rámcový komunitární prog. pro konkurenceschopnost a inovace neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 18298816
+  },
+  {
+    "name": "Program úspor energie - EFEKT neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 60000000
+  },
+  {
+    "name": "Podpora podnikatelských nemovitostí a infrastruktury, brownfields a Smart Park For The Future investiční/neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 1000000000
+  },
+  {
+    "name": "Strategické investiční akce        neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 400000000
+  },
+  {
+    "name": "Kompenzace nepřímých nákladů odvětvím se značným únikem uhlíku (kryto příjmem z výnosu emisních povolenek) investiční/neinvestiční/investiční/neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 0
+  },
+  {
+    "name": "Mandatorní sociálně zdravotní dávky",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 500000000
+  },
+  {
+    "name": "ZNHČ - technický útlum, včetně AZRP a OKD investiční/neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 2029150000
+  },
+  {
+    "name": "Dotace na správu skládek DIAMO  neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 40000000
+  },
+  {
+    "name": "Úhrady z vydobytých nerostů (úhradová dotace) neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 124498999
+  },
+  {
+    "name": "Odstraňování následků těžby uranu ve Stráži pod Ralskem (účet privatizace) investiční/neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 1300000000
+  },
+  {
+    "name": "Dotace na ochranu spotřebitele     neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 8000000
+  },
+  {
+    "name": "Výdaje na mezinárodní akreditaci - o.p.s. ČIA     neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 2000000
+  },
+  {
+    "name": "Obchůdek 2021+     neinvestiční",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 0
+  },
+  {
+    "name": "Dotace na podporu obnovitelných zdrojů energie",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 22000000000
+  },
+  {
+    "name": "NFV investorovi nového jaderného zdroje EDU II",
+    "parent": "Ministerstvo průmyslu a obchodu",
+    "value": 0
+  },
+  {
+    "name": "úhrada ztráty ze závazku veř. služby ve veř. dráž. os. dopravě - obce a kraje",
+    "parent": "Ministerstvo dopravy",
+    "value": 3608250839
+  },
+  {
+    "name": "Poskytování letových provozních služeb letům osvobozených od zpoplatnění ve vzdušném prostoru ČR",
+    "parent": "Ministerstvo dopravy",
+    "value": 82450000
+  },
+  {
+    "name": "dotace na realizaci projektu Legiovlak",
+    "parent": "Ministerstvo dopravy",
+    "value": 1533000
+  },
+  {
+    "name": "Podpora obnovy historických železn. kolejových vozidel",
+    "parent": "Ministerstvo dopravy",
+    "value": 5000000
+  },
+  {
+    "name": "Podpora železničních dopravců",
+    "parent": "Ministerstvo dopravy",
+    "value": 0
+  },
+  {
+    "name": "Poskytování letových provozních služeb H24 na region. letištích",
+    "parent": "Ministerstvo dopravy",
+    "value": 0
+  },
+  {
+    "name": "v.v.i. - institucionální podpora CDV neinvestiční",
+    "parent": "Ministerstvo dopravy",
+    "value": 67662864
+  },
+  {
+    "name": "v.v.i. - dotace na podporu rozvoje činnosti CDV",
+    "parent": "Ministerstvo dopravy",
+    "value": 50000000
+  },
+  {
+    "name": "EU SST Partnership - podíl SR",
+    "parent": "Ministerstvo dopravy",
+    "value": 0
+  },
+  {
+    "name": "ŘLP - U-space",
+    "parent": "Ministerstvo dopravy",
+    "value": 24500000
+  },
+  {
+    "name": "neinvestiční dotace SDFI na krytí deficitu",
+    "parent": "Ministerstvo dopravy",
+    "value": 16423000000
+  },
+  {
+    "name": "dotace spolkům - LAA ČR",
+    "parent": "Ministerstvo dopravy",
+    "value": 9400000
+  },
+  {
+    "name": "v.v.i. - institucionální podpora CDV investiční",
+    "parent": "Ministerstvo dopravy",
+    "value": 30000000
+  },
+  {
+    "name": "investiční dotace SFDI na krytí deficitu",
+    "parent": "Ministerstvo dopravy",
+    "value": 45854594000
+  },
+  {
+    "name": "dotace na projekty spolufinancované z Evropské investiční banky",
+    "parent": "Ministerstvo dopravy",
+    "value": 2547406000
+  },
+  {
+    "name": "Dotace ze SFDI na silnice II. a III. třídy",
+    "parent": "Státní fond dopravní infrastruktury",
+    "value": 6000000000
+  },
+  {
+    "name": "Dotace PGRLF",
+    "parent": "Ministerstvo zemědělství",
+    "value": 2000000000
+  },
+  {
+    "name": "Podpůrné programy do zemědělství",
+    "parent": "Ministerstvo zemědělství",
+    "value": 2739000000
+  },
+  {
+    "name": "Dotace Vinařskému fondu",
+    "parent": "Ministerstvo zemědělství",
+    "value": 40000000
+  },
+  {
+    "name": "Podpora lesního hospodářství",
+    "parent": "Ministerstvo zemědělství",
+    "value": 500000000
+  },
+  {
+    "name": "Podpora neziskovým organizacím",
+    "parent": "Ministerstvo zemědělství",
+    "value": 50000000
+  },
+  {
+    "name": "Podpora vodního hospodářství",
+    "parent": "Ministerstvo zemědělství",
+    "value": 1800000000
+  },
+  {
+    "name": "Rozvojové programy VŠ - centralizované rozvojové projekty",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 160000000
+  },
+  {
+    "name": "Dotace poskytované podle § 18 odst. 5 zákona 111/1998 Sb.",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 120000000
+  },
+  {
+    "name": "Dotace poskytované podle § 40 odst. 2 zákona 111/1998 Sb.",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 27000000
+  },
+  {
+    "name": "Vyrovnávací platba za závazek veř. služby (dotace SVŠ poskytované podle zákona 218/2000 Sb.)",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 15200000
+  },
+  {
+    "name": "Dotace poskytované podle § 18 odst. 5 zákona 111/1998 Sb.",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 145718000
+  },
+  {
+    "name": "Specifický vysokoškolský výzkum",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 1165308000
+  },
+  {
+    "name": "Projekty velkých výzkumných infrastruktur pro výzkum a vývoj celkem",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 1720000000
+  },
+  {
+    "name": "ERC CZ",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 165942334
+  },
+  {
+    "name": "INTER EXCELENCE",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 111376400
+  },
+  {
+    "name": "INTER EXCELENCE II",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 415000000
+  },
+  {
+    "name": "Projekty sdílených činností",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 585141357
+  },
+  {
+    "name": "Dlouhodobý koncepční rozvoj výzkumných organizací",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 8814823965
+  },
+  {
+    "name": "Mezinárodní spolupráce (vč. EUROSTARS a Horizont 2020)",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 2054945669
+  },
+  {
+    "name": "Podpora rozvoje dvojjazyčného vzdělávání na středních školách v ČR",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 1121000
+  },
+  {
+    "name": "Na učitelích záleží",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 5000000
+  },
+  {
+    "name": "Podpora účasti dětí na předškolním vzdělávání",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 20000000
+  },
+  {
+    "name": "Výzva na podporu školního stravování žáků základních škol",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 100000000
+  },
+  {
+    "name": "Podpora nadaných žáků ZŠ a SŠ 2023",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 15000000
+  },
+  {
+    "name": "Práce s dětmi a mládeží (Výzva č.1, č.2 a č.3) 2023",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 204500000
+  },
+  {
+    "name": "Výzva na podporu ústředních kol vědomostních soutěží v roce 2023",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 7800000
+  },
+  {
+    "name": "Výzva na podporu mezinárodních kol soutěží 2023",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 4000000
+  },
+  {
+    "name": "Výzva na podporu okresních a krajských kol vědomostních soutěží v roce 2023",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 15300000
+  },
+  {
+    "name": "Výzva na podporu sportovních, řemeslných, uměleckých a ostatních soutěží v roce 2023",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 45000000
+  },
+  {
+    "name": "Systémový rozvoj česko-německé spolupráce v oblasti vzdělávání a mládeže 2023",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 8000000
+  },
+  {
+    "name": "Školní sport 2023",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 0
+  },
+  {
+    "name": "UNIS - podpora studentů s mimořádnou sportovni výkonností na VVŠ 2023",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 17000000
+  },
+  {
+    "name": "Výzva na podporu celostátních volnočasových pohybových her dětí a mládeže 2023",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 0
+  },
+  {
+    "name": "Výzva SG 2024 na podporu přípravy sportovních talentů ve školách s oborem vzdělání Gymnázium se sportovní přípravou",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 20000000
+  },
+  {
+    "name": "Dotace na podporu programu kulturní, školské a vědecké spolupráce uzavřeného mezi vládami ČR a EAR",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 0
+  },
+  {
+    "name": "Dotace na plnění mezinárodního závazku ČR k zajištění činností polární stanice v Antarktidě",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 20000000
+  },
+  {
+    "name": "Podpora znevýhodněných romských žáků a studentů SŠ, konzervatoří a VOŠ",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 7000000
+  },
+  {
+    "name": "Podpora integrace romské menšiny",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 12875000
+  },
+  {
+    "name": "Výzva na podporu aktivit integrace cizinců v regionálním školství",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 3000000
+  },
+  {
+    "name": "Výzva na podporu vzdělávacích aktivit národnostních menšin",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 15039000
+  },
+  {
+    "name": "Výzva pro podávání žádostí o poskytnutí neivestiční dotace ze státního rozpočtu na aktivity v oblasti primární prevence rizikového chování a podpory duševního zdraví ve školách a školských zařízeních pro rok 2024",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 39829000
+  },
+  {
+    "name": "Dotace na činnost škol a školských zařízení zřizovaných ÚSC",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 182901394134
+  },
+  {
+    "name": "Dotace na činnost soukormých škol a školských zařízení",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 11683228775
+  },
+  {
+    "name": "Dotace na činnost škol a školských zařízení - církevní zřizovatel",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 2721553108
+  },
+  {
+    "name": "Prstenec II",
+    "parent": "Ministerstvo školství, mládeže a tělovýchovy",
+    "value": 1230000000
+  },
+  {
+    "name": "Z3402 Program aplik: Vav národní a kulturni identity - NAKI II (2016-2022)",
+    "parent": "Ministerstvo kultury",
+    "value": 337811000
+  },
+  {
+    "name": "Z3403 Dlouhodobý koncepční rozvoj výzkumných organizaci",
+    "parent": "Ministerstvo kultury",
+    "value": 163087000
+  },
+  {
+    "name": "Z3404 Centrum pro dokumentaci majetkových převodů kulturních statků obětí 2. světové války",
+    "parent": "Ministerstvo kultury",
+    "value": 14255000
+  },
+  {
+    "name": "Z3404 Nadačni fond obětem holocaustu",
+    "parent": "Ministerstvo kultury",
+    "value": 20000000
+  },
+  {
+    "name": "134 14 Péče o národni kulturní dědictví I.",
+    "parent": "Ministerstvo kultury",
+    "value": 500000000
+  },
+  {
+    "name": "134 13 Rozvoj a obnova materiálně technické základny státních kultumich zařízení",
+    "parent": "Ministerstvo kultury",
+    "value": 903537000
+  },
+  {
+    "name": "134 15 Rozvoj obnova materiálně technické základny státních kulturních zařízení",
+    "parent": "Ministerstvo kultury",
+    "value": 37600000
+  },
+  {
+    "name": "134 71 Kulturní dědictví ve vlastnictví státu, podporované evropskými fondy",
+    "parent": "Ministerstvo kultury",
+    "value": 5000000
+  },
+  {
+    "name": "134 72 Kulturní dědictví ve vlastnictví státu, podporované evropskými fondy 2021+",
+    "parent": "Ministerstvo kultury",
+    "value": 8000000
+  },
+  {
+    "name": "Z3407 Program státní podpory profesionálních divadel a stálých profesionálních symfonických orchestrů a pěveckých sborů",
+    "parent": "Ministerstvo kultury",
+    "value": 400000000
+  },
+  {
+    "name": "Z3408 Kulturní aktivity",
+    "parent": "Ministerstvo kultury",
+    "value": 677872000
+  },
+  {
+    "name": "Z3409 Program státní podpory festivalů profesionálního umění",
+    "parent": "Ministerstvo kultury",
+    "value": 120000000
+  },
+  {
+    "name": "Z3410 Veřejné informační služby knihoven",
+    "parent": "Ministerstvo kultury",
+    "value": 38207000
+  },
+  {
+    "name": "Z3411 Podpora standardizovaných veřejných služeb muzeí a galerií",
+    "parent": "Ministerstvo kultury",
+    "value": 2500000
+  },
+  {
+    "name": "Z3412 Podpora expozičních a výstavních projektů",
+    "parent": "Ministerstvo kultury",
+    "value": 7000000
+  },
+  {
+    "name": "Z3413 Podpora výchovně vzdělávacích aktivit v muzejnictví",
+    "parent": "Ministerstvo kultury",
+    "value": 2500000
+  },
+  {
+    "name": "134 52 Integrovaný systérn ochrany movitého kulturního dědictví II. (ISO)",
+    "parent": "Ministerstvo kultury",
+    "value": 44000000
+  },
+  {
+    "name": "134 53 Akviziční fond",
+    "parent": "Ministerstvo kultury",
+    "value": 21000000
+  },
+  {
+    "name": "Z3414 Program záchroany architektonického dědictví",
+    "parent": "Ministerstvo kultury",
+    "value": 235000000
+  },
+  {
+    "name": "Z3415 Havarijní program",
+    "parent": "Ministerstvo kultury",
+    "value": 83000000
+  },
+  {
+    "name": "Z3416 Program restaurování movitých kulturních památek",
+    "parent": "Ministerstvo kultury",
+    "value": 33000000
+  },
+  {
+    "name": "Z3417 Program regenerace městských památkových rezervací a městských památkových zón",
+    "parent": "Ministerstvo kultury",
+    "value": 169000000
+  },
+  {
+    "name": "Z3418 Péče o vesnické památkové rezervace a zóny a krajinné památkové zóny",
+    "parent": "Ministerstvo kultury",
+    "value": 39000000
+  },
+  {
+    "name": "Z3419 Program podpory pro památky světového dědictví",
+    "parent": "Ministerstvo kultury",
+    "value": 6000000
+  },
+  {
+    "name": "Z3420 Podpora obnovy kulturních památek prostřednictvím obcí s rozšířenou působností",
+    "parent": "Ministerstvo kultury",
+    "value": 72000000
+  },
+  {
+    "name": "Z3421 Podpora projektů integrace příslušníků romské komunity",
+    "parent": "Ministerstvo kultury",
+    "value": 2000000
+  },
+  {
+    "name": "Z3422 Podpora kulturních aktivit národnostních menšin",
+    "parent": "Ministerstvo kultury",
+    "value": 10150000
+  },
+  {
+    "name": "Z3423 Podpora rozšiřování a přijímání informací v jazycích národnostních menšin",
+    "parent": "Ministerstvo kultury",
+    "value": 20850000
+  },
+  {
+    "name": "134 22 Podpora rozvoje a obnovy mat.tech.základny regionálních kulturních zařízení",
+    "parent": "Ministerstvo kultury",
+    "value": 361000000
+  },
+  {
+    "name": "134 23 Kofinancování projektů regionální kulturní infrastruktury",
+    "parent": "Ministerstvo kultury",
+    "value": 0
+  },
+  {
+    "name": "Z3424 Státní fond kinematografie - dotace ze SR účelově určená na filmové pobídky",
+    "parent": "Ministerstvo kultury",
+    "value": 1400000000
+  },
+  {
+    "name": "Z3424 Státní fond kinematografie - dotace ze SR",
+    "parent": "Ministerstvo kultury",
+    "value": 7400000
+  },
+  {
+    "name": "Z3424 Státní fond kinematografie - dotace na poskytování podpory kinematografie",
+    "parent": "Ministerstvo kultury",
+    "value": 189314916
+  },
+  {
+    "name": "Příspěvek na podporu činnosti dotčených církví a náboženských společností, POLOŽKA 5223",
+    "parent": "Ministerstvo kultury",
+    "value": 866851800
+  },
+  {
+    "name": "Výdaje na činnost úřadu - ocenění dle nařízení vlády 5/2003 a 126/2009, POLOŽKA 5213",
+    "parent": "Ministerstvo kultury",
+    "value": 820000
+  },
+  {
+    "name": "Z3428 Státní fond kultury České republiky",
+    "parent": "Ministerstvo kultury",
+    "value": 2500000
+  },
+  {
+    "name": "Speciální vzdělávání - lékaři",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 590276225
+  },
+  {
+    "name": "Specializační vzdělávání - nelékaři",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 70000000
+  },
+  {
+    "name": "Specializační vzdělávání - univerzity",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 40000000
+  },
+  {
+    "name": "Vyrovnávání příležitostí pro občany se zdravotním prostředím - neinvestice",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 52000000
+  },
+  {
+    "name": "Podpora zdraví, zvyšování efektivity a kvality zdravotní péče",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 11500000
+  },
+  {
+    "name": "Národní program řešení problematiky HIV/AIDS",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 10000000
+  },
+  {
+    "name": "Program na podporu péče o pacienty v terminálním stádiu onemocnění",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 6000000
+  },
+  {
+    "name": "Program Podpora zubních lékařů v oblastech s omezenou dostupností",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 16000000
+  },
+  {
+    "name": "ZZS krajů a HMP-krizová připravenost-neinvestiční prostředky",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 79500000
+  },
+  {
+    "name": "Český červený křiž - institucionální příspěvek na zajištění činnosti",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 32150000
+  },
+  {
+    "name": "Podpora rozvoje a obnovy mat. tech. Vybavení pro řešení krizových situací",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 41500000
+  },
+  {
+    "name": "Podpora rozvoje zdravotní a sociální péče",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 10000000
+  },
+  {
+    "name": "Věda a výzkum - institucionální podpora",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 769032140
+  },
+  {
+    "name": "Věda a výzkum - účelová podpora",
+    "parent": "Ministerstvo zdravotnictví",
+    "value": 1042621666
+  },
+  {
+    "name": "Rozvoj služeb pro oběti trestné činnosti poskytovaných na základě zákona č. 45/2013 Sb., o obětech trestných činů",
+    "parent": "Ministerstvo spravedlnosti",
+    "value": 8800000
+  },
+  {
+    "name": "Prevence korupčního jednáni I",
+    "parent": "Ministerstvo spravedlnosti",
+    "value": 2800000
+  },
+  {
+    "name": "Prevence korupčního jednání II",
+    "parent": "Ministerstvo spravedlnosti",
+    "value": 2000000
+  },
+  {
+    "name": "Rozvoj probačnich a resocializačních programů pro mladistvé delikventy rámci Programu sociální prevence a prevence kriminality",
+    "parent": "Ministerstvo spravedlnosti",
+    "value": 1500000
+  },
+  {
+    "name": "Rozvoj probačních a resocializačních programů pro dospělé pachatele rámci Programu sociální prevence a prevence kriminality",
+    "parent": "Ministerstvo spravedlnosti",
+    "value": 2000000
+  },
+  {
+    "name": "Program podpory práce s rodinami osob odsouzených k výkonu trestu odnětí svobody v rámci Programu sociální prevence a prevence kriminality",
+    "parent": "Ministerstvo spravedlnosti",
+    "value": 2000000
+  },
+  {
+    "name": "neinvestiční dotace celkem",
+    "parent": "Ministerstvo spravedlnosti",
+    "value": 19100000
+  },
+  {
+    "name": "Institucionálni podpora výzkumných organizací podle zhodnocení jimi dosažených výsledků pro v.v.i.",
+    "parent": "Akademie věd ČR",
+    "value": 5476325608
+  },
+  {
+    "name": "Náklady na činnost AV ČR v.v.i. a vědeckým společnostem",
+    "parent": "Akademie věd ČR",
+    "value": 1387468948
+  },
+  {
+    "name": "Náklady na činnost AV ČR- COMPASS U",
+    "parent": "Akademie věd ČR",
+    "value": 200000000
+  },
+  {
+    "name": "Náklady na činnost AV ČR - ERC CZ-AV",
+    "parent": "Akademie věd ČR",
+    "value": 10000000
+  },
+  {
+    "name": "Můj klub",
+    "parent": "Národní sportovní agentura",
+    "value": 1551879610
+  },
+  {
+    "name": "Podpora sportovních svazů",
+    "parent": "Národní sportovní agentura",
+    "value": 1155000000
+  },
+  {
+    "name": "Podpora zastřešujících ogranizací",
+    "parent": "Národní sportovní agentura",
+    "value": 100000000
+  },
+  {
+    "name": "Podpora všesportovních organizací",
+    "parent": "Národní sportovní agentura",
+    "value": 85000000
+  },
+  {
+    "name": "Podpora univeratního sportu",
+    "parent": "Národní sportovní agentura",
+    "value": 50000000
+  },
+  {
+    "name": "Olympijské a paralympijské hnuti",
+    "parent": "Národní sportovní agentura",
+    "value": 50000000
+  },
+  {
+    "name": "Provoz a údržba",
+    "parent": "Národní sportovní agentura",
+    "value": 450000000
+  },
+  {
+    "name": "Podpora SK/TJ zdravotně postižených sportovců (ZPS)",
+    "parent": "Národní sportovní agentura",
+    "value": 40000000
+  },
+  {
+    "name": "Podpora spolků s celonárodní působností ZPS",
+    "parent": "Národní sportovní agentura",
+    "value": 10000000
+  },
+  {
+    "name": "Podpora reprezentace a talentované mládeže",
+    "parent": "Národní sportovní agentura",
+    "value": 1550000000
+  },
+  {
+    "name": "Podpora ženských kolektivních sportů (LOH 2028)",
+    "parent": "Národní sportovní agentura",
+    "value": 150000000
+  },
+  {
+    "name": "Podpora reprezentace ZPS",
+    "parent": "Národní sportovní agentura",
+    "value": 30000000
+  },
+  {
+    "name": "Podpora účasti na zimních/letních OH",
+    "parent": "Národní sportovní agentura",
+    "value": 20000000
+  },
+  {
+    "name": "Podpora reprezentace ČOV",
+    "parent": "Národní sportovní agentura",
+    "value": 27000000
+  },
+  {
+    "name": "Účast na speciálních olympiádách a deaflympiádách a GG",
+    "parent": "Národní sportovní agentura",
+    "value": 3000000
+  },
+  {
+    "name": "Významné sportovní akce",
+    "parent": "Národní sportovní agentura",
+    "value": 250000000
+  },
+  {
+    "name": "Významné sportovní akce ZPS",
+    "parent": "Národní sportovní agentura",
+    "value": 15000000
+  },
+  {
+    "name": "Významné sportovní akce mimořádné důležitosti",
+    "parent": "Národní sportovní agentura",
+    "value": 113000000
+  },
+  {
+    "name": "Podpora všesportovních organizací - Všesokolský slet",
+    "parent": "Národní sportovní agentura",
+    "value": 0
+  },
+  {
+    "name": "Regionální sportovní infrastruktura - investice",
+    "parent": "Národní sportovní agentura",
+    "value": 401776666
+  },
+  {
+    "name": "Materiálně technická základna sportu - movité investice",
+    "parent": "Národní sportovní agentura",
+    "value": 150000000
+  },
+  {
+    "name": "Standardizovaná sportovní infrastruktura - investice",
+    "parent": "Národní sportovní agentura",
+    "value": 550000000
+  },
+  {
+    "name": "Kabina - Rozvoj místních sportovišť a zázemí - investice",
+    "parent": "Národní sportovní agentura",
+    "value": 0
+  },
+  {
+    "name": "EDS/SMVS č. 175 300 - ",
+    "parent": "Státní úřad pro jadernou bezpečnost",
+    "value": 203111307
+  },
+  {
+    "name": "EPSILON (2015-2026)",
+    "parent": "Technologcká agentura ČR",
+    "value": 109823635
+  },
+  {
+    "name": "THÉTA (2018-2025)",
+    "parent": "Technologcká agentura ČR",
+    "value": 695902576
+  },
+  {
+    "name": "ÉTA (2018-2023)",
+    "parent": "Technologcká agentura ČR",
+    "value": 175318089
+  },
+  {
+    "name": "Národni Centra kompetence (2018-2028)",
+    "parent": "Technologcká agentura ČR",
+    "value": 985953605
+  },
+  {
+    "name": "BETA2 (2017-2024)",
+    "parent": "Technologcká agentura ČR",
+    "value": 130000000
+  },
+  {
+    "name": "DELTA2 (2020-2025)",
+    "parent": "Technologcká agentura ČR",
+    "value": 238169142
+  },
+  {
+    "name": "SIGMA (2022-2029)",
+    "parent": "Technologcká agentura ČR",
+    "value": 81244877
+  },
+  {
+    "name": "KAPPA (2019-2024)",
+    "parent": "Technologcká agentura ČR",
+    "value": 4500000
+  },
+  {
+    "name": "THÉTA 2 (2023-2031)",
+    "parent": "Technologcká agentura ČR",
+    "value": 0
+  },
+  {
+    "name": "BETA 3 (2023-2031)",
+    "parent": "Technologcká agentura ČR",
+    "value": 0
+  },
+  {
+    "name": "MŽP-Prostředí pro život (2020-2026)",
+    "parent": "Technologcká agentura ČR",
+    "value": 599453191
+  },
+  {
+    "name": "MŽP-Prostředi pro život - nový program",
+    "parent": "Technologcká agentura ČR",
+    "value": 0
+  },
+  {
+    "name": "MD-Doprava 2020+ (2020-2026)",
+    "parent": "Technologcká agentura ČR",
+    "value": 439917585
+  },
+  {
+    "name": "MD-Doprava 2030 (2023-2030)",
+    "parent": "Technologcká agentura ČR",
+    "value": 0
+  },
+  {
+    "name": "MPO-TREND (2020-2027)",
+    "parent": "Technologcká agentura ČR",
+    "value": 1909954515
+  },
+  {
+    "name": "MO - nový program",
+    "parent": "Technologcká agentura ČR",
+    "value": 0
+  },
+  {
+    "name": "nadpožadavek z roku 2023 - krácení rozpočtu",
+    "parent": "Technologcká agentura ČR",
+    "value": 0
+  },
+  {
+    "name": "Masarykovo demokratické hnutí",
+    "parent": "Všeobecná pokladní správa",
+    "value": 1530000
+  },
+  {
+    "name": "Ústav TGM, o.p.s.",
+    "parent": "Všeobecná pokladní správa",
+    "value": 1800000
+  },
+  {
+    "name": "Československá obec legionářská",
+    "parent": "Všeobecná pokladní správa",
+    "value": 6000000
+  },
+  {
+    "name": "Platforma evropské paměti a svědomi",
+    "parent": "Všeobecná pokladní správa",
+    "value": 500000
+  },
+  {
+    "name": "Spolek pro zachování odkazu českého odboje",
+    "parent": "Všeobecná pokladní správa",
+    "value": 250000
+  },
+  {
+    "name": "Spolek Bez komunistů.cz",
+    "parent": "Všeobecná pokladní správa",
+    "value": 250000
+  },
+  {
+    "name": "Vyplacení jednorázové náhrady ke zmírnění křivd způsobených komunistickým režimem",
+    "parent": "Všeobecná pokladní správa",
+    "value": 100000
+  },
+  {
+    "name": "Fin. vztahy státního rozpočtu k rozpočtům krajů (s výjimkou hl.m.Prahy) - příspěvek na výkon státní správy",
+    "parent": "Všeobecná pokladní správa",
+    "value": 1898681000
+  },
+  {
+    "name": "Fin. vztahy státního rozpočtu k rozpočtům obcí (s výjimkou hl.m.Prahy) - příspěvek na výkon státní správy",
+    "parent": "Všeobecná pokladní správa",
+    "value": 10783120200
+  },
+  {
+    "name": "Fin. vztah státního rozpočtu k rozpočtu Prahy  - příspěvek na výkon státní správy",
+    "parent": "Všeobecná pokladní správa",
+    "value": 1320632800
+  },
+  {
+    "name": "Prostředky pro řešení aktuálních problémů ÚSC - dotace pro DSO (příspěvek na žáka)",
+    "parent": "Všeobecná pokladní správa",
+    "value": 75000000
+  },
+  {
+    "name": "Výdaje stanovené zvláštními zákony nebo dalšími právními předpisy - dotace na protiradonová opatření",
+    "parent": "Všeobecná pokladní správa",
+    "value": 10000000
+  },
+  {
+    "name": "Náhrady vyplácané prostřednictvím krajských úřadů podle zvláštních právních předpisů (likvidace léčiv, prevence TBC) - pol. 5811",
+    "parent": "Všeobecná pokladní správa",
+    "value": 77000000
+  },
+  {
+    "name": "Náhrady vyplácené prostřednictvím krajských úřadů podle zvláštních právních předpisů (škody způsobené zvláště chráněnými živočichy)",
+    "parent": "Všeobecná pokladní správa",
+    "value": 109595200
+  },
+  {
+    "name": "Náhrady výdajů ÚSC - doplatek za předchozí rok - pol. 5369",
+    "parent": "Všeobecná pokladní správa",
+    "value": 20000000
+  },
+  {
+    "name": "Kompenzační příspěvek krajům na zajištění nouzového ubytování v souvislosti s ozbrojeným konfliktem na území Ukrajiny  vyvolaným invazí Ruské federace - Rezerva na řešení krizových situací (zákon č.240/2000 Sb.)",
+    "parent": "Všeobecná pokladní správa",
+    "value": 0
+  },
+  {
+    "name": "Výdaje na volby - pro ÚSC",
+    "parent": "Všeobecná pokladní správa",
+    "value": 0
+  },
+  {
+    "name": "Poskytování mimořádných dotací z krizových rezerv státního rozpočtu",
+    "parent": "Všeobecná pokladní správa",
+    "value": 200000000
+  },
+  {
+    "name": "Podpora rozvoje a obnovy obecni infrastruktury a občanského vybavení (program 298 23) investiční dotace",
+    "parent": "Všeobecná pokladní správa",
+    "value": 291400000
+  },
+  {
+    "name": "Podpora a rozvoj oblastí života obcí a krajů, kterým stanovila prioritu vláda ČR (program 298 24) investiční dotace",
+    "parent": "Všeobecná pokladní správa",
+    "value": 63600000
+  }
+]

@@ -19,6 +19,7 @@ export default defineConfig({
         "graf8.html",
         "graf9.html",
         "graf10.html",
+        "graf11.html",
       ],
     },
   },
