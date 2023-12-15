@@ -32,19 +32,19 @@ const kapitolySorted = Array.from(Object.entries(kapitoly)).sort(
   (a: any, b: any) => b[1] - a[1]
 );
 
-const result = [
-  ...kapitolySorted.map((item: any, index) => {
-    return {
-      id: item[0],
-      name: item[0],
-      color: index < 11 ? index : index - 12,
-    };
-  }),
-  ...cleanData.map((item: any) => {
-    return { name: item.dotace, parent: item.kapitola, value: item.r23 };
-  }),
-];
+const result = ["r23", "r24", "r25"].map((key) => {
+  return [
+    `rok 20${key.substring(1)}`,
+    ...kapitolySorted.map((item) => {
+      const dotace = cleanData.filter((row: any) => row.kapitola === item[0]);
+      const dotaceSum = dotace.reduce((acc: any, item: any) => {
+        return acc + item[key];
+      }, 0);
+      return dotaceSum;
+    }),
+  ];
+});
 
-console.log(kapitolySorted);
+console.log(result);
 
-Deno.writeTextFileSync("data/dotaceProcessed.json", JSON.stringify(result));
+Deno.writeTextFileSync("data/dotaceZmeny.json", JSON.stringify(result));

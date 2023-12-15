@@ -66,6 +66,11 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
             Graf 11: Přehled dotací
           </Link>
         </li>
+        <li>
+          <Link href="graf12.html" textDecoration={"underline"} target="_blank">
+            Graf 12: Změna objemu dotací
+          </Link>
+        </li>
       </ul>
     </ChakraProvider>
   </React.StrictMode>
