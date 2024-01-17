@@ -16,6 +16,8 @@ import {
 import data from "./data/potraviny.json";
 import colors from "./data/eightcolors.json";
 import colors2 from "./data/eightcolors2.json";
+import colors3 from "./data/eightcolors3.json";
+
 import { Heading, Select } from "@chakra-ui/react";
 // Radio, RadioGroup, Stack
 import { usePostMessageWithHeight } from "./hooks/usePostHeightMessage";
@@ -28,14 +30,14 @@ Highcharts.setOptions({
 
 const cities = new Set(data.map((store) => store.city));
 const commodities = [
-    { name: "chleb", description: "Chléb konzumní kmínový (1 kg)", color: colors[0], color2: colors2[0] },
-    { name: "jablka", description: "Jablka konzumní (1 kg)", color: colors[1], color2: colors2[1] },
-    { name: "cukr", description: "Cukr krystalový (1 kg)", color: colors[2], color2: colors2[2] },
-    { name: "mleko", description: "Mléko 1,5 % UHT (tetrapack 1 l)", color: colors[3], color2: colors2[3] },
-    { name: "maslo", description: "Máslo 82 % (250 g)", color: colors[4], color2: colors2[4] },
-    { name: "kure", description: "Kuře celé chlazené bez drobů jak. A  (1 kg)", color: colors[5], color2: colors2[5] },
-    { name: "vejce", description: "Slepičí konzumní vejce vel. M (klecové nebo halové/podestýlkové chovy) (10 ks)", color: colors[6], color2: colors2[6] },
-    { name: "mouka", description: "Mouka hladká pšeničná (1 kg)", color: colors[7], color2: colors2[7] },
+    { name: "chleb", description: "Chléb konzumní kmínový (1 kg)", color: colors3[0], color2: colors[0], color3: colors2[0] },
+    { name: "jablka", description: "Jablka konzumní (1 kg)", color: colors3[1], color2: colors[1], color3: colors2[1] },
+    { name: "cukr", description: "Cukr krystalový (1 kg)", color: colors3[2], color2: colors[2], color3: colors2[2] },
+    { name: "mleko", description: "Mléko 1,5 % UHT (tetrapack 1 l)", color: colors3[3], color2: colors[3], color3: colors2[3] },
+    { name: "maslo", description: "Máslo 82 % (250 g)", color: colors3[4], color2: colors[4], color3: colors2[4]},
+    { name: "kure", description: "Kuře celé chlazené bez drobů jak. A  (1 kg)", color: colors3[5], color2: colors[5], color3: colors2[5] },
+    { name: "vejce", description: "Slepičí konzumní vejce vel. M (klecové nebo halové/podestýlkové chovy) (10 ks)", color: colors3[6], color2: colors[6], color3: colors2[6] },
+    { name: "mouka", description: "Mouka hladká pšeničná (1 kg)", color: colors3[7], color2: colors[7], color3: colors2[7] },
 ];
 
 const filterData = (data: any[], city: string) => {
@@ -94,6 +96,8 @@ const Graf = () => {
                                     animation: false,
                                     dataLabels: {
                                         enabled: true,
+                                        rotation: 90,
+                                        y: 30,
                                         formatter: function (this) {
                                             return this.point.y?.toLocaleString("cs-CZ") + " Kč";
                                         },
@@ -117,13 +121,19 @@ const Graf = () => {
                                 <ColumnSeries
                                     data={filteredData.filter((store) => store.time === 1).map((store) => store[commodity.name])}
                                     color={commodity.color}
-                                    name={"začátek října 2023"}
+                                    name={"říjen 2023"}
                                 />
                                 <ColumnSeries
                                     data={filteredData.filter((store) => store.time === 2).map((store) => store[commodity.name])}
                                     color={commodity.color2}
-                                    name={"konec listopadu 2023"}
+                                    name={"listopad 2023"}
                                 />
+                                                                <ColumnSeries
+                                    data={filteredData.filter((store) => store.time === 3).map((store) => store[commodity.name])}
+                                    color={commodity.color3}
+                                    name={"leden 2024"}
+                                />
+
 
                             </YAxis>
                         </HighchartsChart></div>
