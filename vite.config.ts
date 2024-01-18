@@ -22,6 +22,7 @@ export default defineConfig({
         "graf11.html",
         "graf12.html",
         "potraviny.html",
+        "potraviny-komodity.html",
       ],
     },
   },
