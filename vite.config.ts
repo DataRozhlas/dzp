@@ -23,6 +23,7 @@ export default defineConfig({
         "graf12.html",
         "potraviny.html",
         "potraviny-komodity.html",
+        "potraviny-scatter.html",
       ],
     },
   },
