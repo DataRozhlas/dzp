@@ -18,7 +18,7 @@ import colors2 from "./data/eightcolors2.json";
 import colors3 from "./data/eightcolors3.json";
 
 import {
-    Heading, Table, Thead, Tbody, Tr, Th, Td, TableContainer,
+    Heading, Box, Divider, Table, Thead, Tbody, Tr, Th, Td, TableContainer,
 } from "@chakra-ui/react";
 import { usePostMessageWithHeight } from "./hooks/usePostHeightMessage";
 
@@ -43,7 +43,7 @@ const calculateAveragePrice = (data: any, month: number, commodity: any) => {
     const filteredData = data.filter((item: any) => item.time === month);
     const filteredCommodity = filteredData.filter((item: any) => item[commodity.name] !== null && item[commodity.name] !== undefined);
     const averagePrice = filteredCommodity.reduce((sum: number, item: any) => sum + item[commodity.name], 0) / filteredCommodity.length;
-    return averagePrice.toLocaleString("cs-CZ", {maximumFractionDigits: 2, minimumFractionDigits: 2}) + " Kč"
+    return averagePrice.toLocaleString("cs-CZ", { maximumFractionDigits: 2, minimumFractionDigits: 2 }) + " Kč"
 };
 
 const calculateMostFrequentPrice = (data: any, month: number, commodity: any) => {
@@ -55,12 +55,12 @@ const calculateMostFrequentPrice = (data: any, month: number, commodity: any) =>
         - prices.filter((v: number) => v === b).length
     ).pop();
     const frequency = prices.filter((v: number) => v === mostFrequentPrice).length;
-    return mostFrequentPrice.toLocaleString("cs-CZ", {maximumFractionDigits: 2, minimumFractionDigits: 2}) + " Kč (" + frequency + "×)"
+    return mostFrequentPrice.toLocaleString("cs-CZ", { maximumFractionDigits: 2, minimumFractionDigits: 2 }) + " Kč (" + frequency + "×)"
 }
 
 const Graf = () => {
     const { containerRef, postHeightMessage } =
-        usePostMessageWithHeight("potraviny");
+        usePostMessageWithHeight("potraviny-scatter");
 
     useEffect(() => {
         postHeightMessage();
@@ -68,21 +68,21 @@ const Graf = () => {
 
 
     return (
-        <div ref={containerRef}>
+        <Box ref={containerRef}>
             <HighchartsProvider Highcharts={Highcharts}>
                 {commodities.map((commodity) => {
-                    return (<div key={commodity.name} >
-                        <Heading as="h2" size="lg" my={5}>
+                    return (<Box key={commodity.name}>
+                        <Heading as="h2" size="xl" mb={5}>
                             {commodity.description}
                         </Heading>
                         <TableContainer pb={10}>
-                            <Table variant='simple'>
+                            <Table variant='simple' size={"sm"}>
                                 <Thead>
                                     <Tr>
                                         <Th>    </Th>
                                         <Th>říjen</Th>
                                         <Th>listopad</Th>
-                                        <Th>prosinec</Th>
+                                        <Th>leden</Th>
                                     </Tr>
                                 </Thead>
                                 <Tbody>
@@ -103,7 +103,7 @@ const Graf = () => {
                                 </Tbody>
                             </Table>
                         </TableContainer>
-                        <Heading as="h3" size="md" mb={4}>
+                        <Heading as="h3" size="sm" mb={4}>
                             Ceny zjištěné v jednotlivých obchodech </Heading>
                         <HighchartsChart
                             plotOptions={{
@@ -135,10 +135,10 @@ const Graf = () => {
                                 style={{ fontFamily: "var(--chakra-fonts-heading)" }}
                             // height={1800}
                             />
-                            <Tooltip 
-                                shared 
-                                valueSuffix=" Kč" 
-                                formatter={function(this) {
+                            <Tooltip
+                                shared
+                                valueSuffix=" Kč"
+                                formatter={function (this) {
                                     return this.point.name + " " + this.y?.toLocaleString("cs-CZ") + " Kč" + (this.point.options.custom?.note !== null ? " (" + this.point.options.custom?.note + ")" : "");
                                 }}
                             />
@@ -163,44 +163,34 @@ const Graf = () => {
                                 }
                             >
                                 <ScatterSeries
-                                    data={data.filter((store) => store.time === 1 && store[commodity.name as keyof typeof store] !== null).map((store) =>  {return {x: 0, y: Number(store[commodity.name as keyof typeof store]), name: store.store + " " + store.city, custom: {note: store[`${commodity.name}_note` as keyof typeof store]}}})}
+                                    data={data.filter((store) => store.time === 1 && store[commodity.name as keyof typeof store] !== null).map((store) => { return { x: 0, y: Number(store[commodity.name as keyof typeof store]), name: store.store + " " + store.city, custom: { note: store[`${commodity.name}_note` as keyof typeof store] } } })}
                                     color={commodity.color3}
                                     opacity={0.5}
                                     name={"říjen 2023"}
                                 />
                                 <ScatterSeries
-                                    data={data.filter((store) => store.time === 2 && store[commodity.name as keyof typeof store] !== null).map((store) =>  {return {x: 1, y: Number(store[commodity.name as keyof typeof store]), name: store.store + " " + store.city, custom: {note: store[`${commodity.name}_note` as keyof typeof store]}}})}
+                                    data={data.filter((store) => store.time === 2 && store[commodity.name as keyof typeof store] !== null).map((store) => { return { x: 1, y: Number(store[commodity.name as keyof typeof store]), name: store.store + " " + store.city, custom: { note: store[`${commodity.name}_note` as keyof typeof store] } } })}
                                     color={commodity.color3}
                                     opacity={0.7}
                                     name={"listopad 2023"}
                                 />
                                 <ScatterSeries
-                                    data={data.filter((store) => store.time === 3 && store[commodity.name as keyof typeof store] !== null).map((store) =>  {return {x: 2, y: Number(store[commodity.name as keyof typeof store]), name: store.store + " " + store.city, custom: {note: store[`${commodity.name}_note` as keyof typeof store]}}})}
+                                    data={data.filter((store) => store.time === 3 && store[commodity.name as keyof typeof store] !== null).map((store) => { return { x: 2, y: Number(store[commodity.name as keyof typeof store]), name: store.store + " " + store.city, custom: { note: store[`${commodity.name}_note` as keyof typeof store] } } })}
                                     color={commodity.color3}
                                     name={"leden 2024"}
                                 />
 
                             </YAxis>
                         </HighchartsChart>
-                    </div>
+                        <Divider my={10}/>
+                    </Box>
 
 
 
                     );
                 })}
             </HighchartsProvider>
-
-            {/*  
-            <Heading as="h2" size="sm" py={1}>
-                Průměrná cena celého koše potravin v říjnu: {calculateAveragePrice(data, 1)}
-            </Heading>
-            <Heading as="h2" size="sm" py={1}>
-                Průměrná cena celého koše potravin v listopadu: {calculateAveragePrice(data, 2)}
-            </Heading>
-            <Heading as="h2" size="sm" py={1}>
-                Průměrná cena celého koše potravin v lednu: {calculateAveragePrice(data, 3)}
-            </Heading>
- */}        </div>
+        </Box>
     );
 };
 

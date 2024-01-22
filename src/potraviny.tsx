@@ -65,11 +65,11 @@ const Graf = () => {
 
     return (
         <div ref={containerRef}>
-            <Heading as="h1" size="lg" py={1}>
-                Ceny základních potravin jsou často na halíř stejné
+            <Heading as="h1" size="xl" py={1}>
+                Kolik u vás stojí základní potraviny
             </Heading>
             <Heading as="h2" size="sm" py={1}>
-                Vyberte z menu krajské město, pro které chcete zobrazit ceny:
+                Vyberte krajské město, pro které chcete zobrazit ceny:
             </Heading>
             <Select py={4} onChange={
                 (e) => setSelectedCity(e.target.value)

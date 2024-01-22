@@ -42,7 +42,7 @@ const commodities = [
 
 const Graf = () => {
     const { containerRef, postHeightMessage } =
-        usePostMessageWithHeight("potraviny");
+        usePostMessageWithHeight("potraviny-komodity");
 
     useEffect(() => {
         postHeightMessage();
@@ -53,11 +53,11 @@ const Graf = () => {
 
     return (
         <div ref={containerRef}>
-            <Heading as="h1" size="lg" py={1}>
+            <Heading as="h1" size="xl" py={1}>
                 Ceny základních potravin v krajských městech
             </Heading>
             <Heading as="h2" size="sm" py={1}>
-                Vyberte z menu potravinu, pro kterou chcete zobrazit ceny:
+                Vyberte potravinu, pro kterou chcete zobrazit ceny:
             </Heading>
             <Select py={4} value={selectedFood} onChange={
                 (e) => {
