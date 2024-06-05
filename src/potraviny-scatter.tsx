@@ -13,9 +13,8 @@ import {
 } from "react-jsx-highcharts";
 
 import data from "./data/potraviny.json";
-import colors from "./data/eightcolors.json";
-import colors2 from "./data/eightcolors2.json";
-import colors3 from "./data/eightcolors3.json";
+
+import colors from "./data/potraviny-colors.json";
 
 import {
     Heading, Box, Divider, Table, Thead, Tbody, Tr, Th, Td, TableContainer,
@@ -29,14 +28,14 @@ Highcharts.setOptions({
 });
 
 const commodities = [
-    { name: "chleb", description: "Chléb konzumní kmínový (1 kg)", color: colors3[0], color2: colors[0], color3: colors2[0] },
-    { name: "jablka", description: "Jablka konzumní (1 kg)", color: colors3[1], color2: colors[1], color3: colors2[1] },
-    { name: "cukr", description: "Cukr krystalový (1 kg)", color: colors3[2], color2: colors[2], color3: colors2[2] },
-    { name: "mleko", description: "Mléko 1,5 % UHT (tetrapack 1 l)", color: colors3[3], color2: colors[3], color3: colors2[3] },
-    { name: "maslo", description: "Máslo 82 % (250 g)", color: colors3[4], color2: colors[4], color3: colors2[4] },
-    { name: "kure", description: "Kuře celé chlazené bez drobů jak. A  (1 kg)", color: colors3[5], color2: colors[5], color3: colors2[5] },
-    { name: "vejce", description: "Slepičí konzumní vejce vel. M (klecové nebo halové/podestýlkové chovy) (10 ks)", color: colors3[6], color2: colors[6], color3: colors2[6] },
-    { name: "mouka", description: "Mouka hladká pšeničná (1 kg)", color: colors3[7], color2: colors[7], color3: colors2[7] },
+    { name: "chleb", description: "Chléb konzumní kmínový (1 kg)" },
+    { name: "jablka", description: "Jablka konzumní (1 kg)" },
+    { name: "cukr", description: "Cukr krystalový (1 kg)" },
+    { name: "mleko", description: "Mléko 1,5 % UHT (tetrapack 1 l)" },
+    { name: "maslo", description: "Máslo 82 % (250 g)" },
+    { name: "kure", description: "Kuře celé chlazené bez drobů jak. A  (1 kg)" },
+    { name: "vejce", description: "Slepičí konzumní vejce vel. M (klecové nebo halové/podestýlkové chovy) (10 ks)" },
+    { name: "mouka", description: "Mouka hladká pšeničná (1 kg)" },
 ];
 
 const calculateAveragePrice = (data: any, month: number, commodity: any) => {
@@ -70,7 +69,7 @@ const Graf = () => {
     return (
         <Box ref={containerRef}>
             <HighchartsProvider Highcharts={Highcharts}>
-                {commodities.map((commodity) => {
+                {commodities.map((commodity, index) => {
                     return (<Box key={commodity.name}>
                         <Heading as="h2" size="xl" mb={5}>
                             {commodity.description}
@@ -83,6 +82,7 @@ const Graf = () => {
                                         <Th>říjen</Th>
                                         <Th>listopad</Th>
                                         <Th>leden</Th>
+                                        <Th>květen</Th>
                                     </Tr>
                                 </Thead>
                                 <Tbody>
@@ -91,6 +91,7 @@ const Graf = () => {
                                         <Td>{calculateMostFrequentPrice(data, 1, commodity)}</Td>
                                         <Td>{calculateMostFrequentPrice(data, 2, commodity)}</Td>
                                         <Td>{calculateMostFrequentPrice(data, 3, commodity)}</Td>
+                                        <Td>{calculateMostFrequentPrice(data, 4, commodity)}</Td>
 
                                     </Tr>
                                     <Tr>
@@ -98,6 +99,7 @@ const Graf = () => {
                                         <Td>{calculateAveragePrice(data, 1, commodity)}</Td>
                                         <Td>{calculateAveragePrice(data, 2, commodity)}</Td>
                                         <Td>{calculateAveragePrice(data, 3, commodity)}</Td>
+                                        <Td>{calculateAveragePrice(data, 4, commodity)}</Td>
                                     </Tr>
 
                                 </Tbody>
@@ -164,25 +166,28 @@ const Graf = () => {
                             >
                                 <ScatterSeries
                                     data={data.filter((store) => store.time === 1 && store[commodity.name as keyof typeof store] !== null).map((store) => { return { x: 0, y: Number(store[commodity.name as keyof typeof store]), name: store.store + " " + store.city, custom: { note: store[`${commodity.name}_note` as keyof typeof store] } } })}
-                                    color={commodity.color3}
-                                    opacity={0.5}
+                                    color={colors[index][0]}
                                     name={"říjen 2023"}
                                 />
                                 <ScatterSeries
                                     data={data.filter((store) => store.time === 2 && store[commodity.name as keyof typeof store] !== null).map((store) => { return { x: 1, y: Number(store[commodity.name as keyof typeof store]), name: store.store + " " + store.city, custom: { note: store[`${commodity.name}_note` as keyof typeof store] } } })}
-                                    color={commodity.color3}
-                                    opacity={0.7}
+                                    color={colors[index][1]}
                                     name={"listopad 2023"}
                                 />
                                 <ScatterSeries
                                     data={data.filter((store) => store.time === 3 && store[commodity.name as keyof typeof store] !== null).map((store) => { return { x: 2, y: Number(store[commodity.name as keyof typeof store]), name: store.store + " " + store.city, custom: { note: store[`${commodity.name}_note` as keyof typeof store] } } })}
-                                    color={commodity.color3}
+                                    color={colors[index][2]}
+                                    name={"leden 2024"}
+                                />
+                                <ScatterSeries
+                                    data={data.filter((store) => store.time === 4 && store[commodity.name as keyof typeof store] !== null).map((store) => { return { x: 3, y: Number(store[commodity.name as keyof typeof store]), name: store.store + " " + store.city, custom: { note: store[`${commodity.name}_note` as keyof typeof store] } } })}
+                                    color={colors[index][3]}
                                     name={"leden 2024"}
                                 />
 
                             </YAxis>
                         </HighchartsChart>
-                        <Divider my={10}/>
+                        <Divider my={10} />
                     </Box>
 
 

@@ -14,9 +14,7 @@ import {
 } from "react-jsx-highcharts";
 
 import data from "./data/potraviny.json";
-import colors from "./data/eightcolors.json";
-import colors2 from "./data/eightcolors2.json";
-import colors3 from "./data/eightcolors3.json";
+import colors from "./data/potraviny-colors.json";
 
 import { Heading, Select } from "@chakra-ui/react";
 import { usePostMessageWithHeight } from "./hooks/usePostHeightMessage";
@@ -29,14 +27,14 @@ Highcharts.setOptions({
 
 const cities = new Set(data.map((store) => store.city));
 const commodities = [
-    { name: "chleb", description: "Chléb konzumní kmínový (1 kg)", color: colors3[0], color2: colors[0], color3: colors2[0] },
-    { name: "jablka", description: "Jablka konzumní (1 kg)", color: colors3[1], color2: colors[1], color3: colors2[1] },
-    { name: "cukr", description: "Cukr krystalový (1 kg)", color: colors3[2], color2: colors[2], color3: colors2[2] },
-    { name: "mleko", description: "Mléko 1,5 % UHT (tetrapack 1 l)", color: colors3[3], color2: colors[3], color3: colors2[3] },
-    { name: "maslo", description: "Máslo 82 % (250 g)", color: colors3[4], color2: colors[4], color3: colors2[4] },
-    { name: "kure", description: "Kuře celé chlazené bez drobů jak. A  (1 kg)", color: colors3[5], color2: colors[5], color3: colors2[5] },
-    { name: "vejce", description: "Slepičí konzumní vejce vel. M (klecové nebo halové/podestýlkové chovy) (10 ks)", color: colors3[6], color2: colors[6], color3: colors2[6] },
-    { name: "mouka", description: "Mouka hladká pšeničná (1 kg)", color: colors3[7], color2: colors[7], color3: colors2[7] },
+    { name: "chleb", description: "Chléb konzumní kmínový (1 kg)" },
+    { name: "jablka", description: "Jablka konzumní (1 kg)" },
+    { name: "cukr", description: "Cukr krystalový (1 kg)" },
+    { name: "mleko", description: "Mléko 1,5 % UHT (tetrapack 1 l)" },
+    { name: "maslo", description: "Máslo 82 % (250 g)" },
+    { name: "kure", description: "Kuře celé chlazené bez drobů jak. A  (1 kg)", },
+    { name: "vejce", description: "Slepičí konzumní vejce vel. M (klecové nebo halové/podestýlkové chovy) (10 ks)" },
+    { name: "mouka", description: "Mouka hladká pšeničná (1 kg)" },
 ];
 
 
@@ -110,19 +108,26 @@ const Graf = () => {
                             <YAxis>
                                 <ColumnSeries
                                     data={data.filter((store) => store.city === city && store.time === 1).map((store) => store[selectedFood as keyof typeof store])}
-                                    color={commodities.filter((commodity) => commodity.name === selectedFood)[0].color}
+                                    color={colors[commodities.findIndex((commodity) => commodity.name === selectedFood)][0]}
                                     name={"říjen 2023"}
                                 />
                                 <ColumnSeries
                                     data={data.filter((store) => store.city === city && store.time === 2).map((store) => store[selectedFood as keyof typeof store])}
-                                    color={commodities.filter((commodity) => commodity.name === selectedFood)[0].color2}
+                                    color={colors[commodities.findIndex((commodity) => commodity.name === selectedFood)][1]}
                                     name={"listopad 2023"}
                                 />
                                 <ColumnSeries
                                     data={data.filter((store) => store.city === city && store.time === 3).map((store) => store[selectedFood as keyof typeof store])}
-                                    color={commodities.filter((commodity) => commodity.name === selectedFood)[0].color3}
-                                    name={"leden 2024"}
+                                    color={colors[commodities.findIndex((commodity) => commodity.name === selectedFood)][2]}
+
+                                    name={"black"}
                                 />
+                                <ColumnSeries
+                                    data={data.filter((store) => store.city === city && store.time === 4).map((store) => store[selectedFood as keyof typeof store])}
+                                    color={colors[commodities.findIndex((commodity) => commodity.name === selectedFood)][3]}
+                                    name={"květen 2024"}
+                                />
+
 
                                 {/* <ColumnSeries
                                     data={filteredData.filter((store) => store.time === 2).map((store) => store[commodity.name])}
